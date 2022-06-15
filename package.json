@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./api/index.js"
+    "dev": "node app.js"
   },
   "author": "Edreid",
   "license": "ISC",
@@ -23,5 +23,8 @@
     "tslint": "^5.12.1",
     "typescript": "^3.3.3",
     "web-vitals": "^2.1.4"
+  },
+  "engines": {
+    "node": "16.13.1"
   }
 }

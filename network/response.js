@@ -1,4 +1,4 @@
-export function success(req, res,message,status){
+export function success(res,message,status){
     
     let statusCode = status || 200;
     let statusMessage = message || '';
