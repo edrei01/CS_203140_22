@@ -1,8 +1,6 @@
 import { Router } from 'express';
-import { success } from '../../network/response.js';
-import {getData} from '../../model/db.js';
-import { getUser } from '../../models/Users.js';
-
+import { getUser } from '../models/Users.js'
+Servidorimport { getProfile } from '../models/Profile.js'
 
 const router = Router();
 

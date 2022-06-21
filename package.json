@@ -5,8 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start:dev": "cross-env NODE_ENV=developmet node app.js",
+    "start:test": "cross-env NODE_ENV=test node app.js",
+    "start:prod": "cross-env NODE_ENV=production node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./api/index.js"
+    "start": "node app.js"
   },
   "author": "Edreid",
   "license": "ISC",
@@ -23,5 +26,10 @@
     "tslint": "^5.12.1",
     "typescript": "^3.3.3",
     "web-vitals": "^2.1.4"
-  }
+  },
+  "engines": {
+    "node": "16.13.1",
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
 }
